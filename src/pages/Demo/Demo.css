@@ -1,0 +1,132 @@
+.demo-marquee {
+  display: flex;
+  align-items: center;
+  min-height: 300px;
+  height: 100vh;
+  max-height: calc(100vh - 548px);
+  padding-bottom: 60px;
+  overflow: hidden;
+}
+
+.marquee-button {
+  cursor: pointer;
+  margin: 0 10px;
+  color: black;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 10px;
+  font-weight: normal;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.marquee-button:hover {
+  color: #89939c;
+}
+
+.marquee-button-selected {
+  cursor: pointer;
+  margin: 0 10px;
+  color: black;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+
+.playground {
+  background-color: #e2eaee;
+  margin-bottom: -60px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.playground-buttons {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  align-items: flex-end;
+}
+
+.playground-input {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-column-gap: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .playground-buttons {
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 30px;
+  }
+
+  .playground-input {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .playground {
+    padding: 60px 30px;
+  }
+
+  .playground-buttons {
+    grid-template-columns: auto auto;
+  }
+
+  .playground-input {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .marquee-button {
+    margin: 0 6px;
+    font-size: 8px;
+  }
+
+  .marquee-button:hover {
+    color: #89939c;
+  }
+
+  .marquee-button-selected {
+    margin: 0 6px;
+    font-size: 14px;
+  }
+
+  .playground-buttons {
+    grid-template-columns: auto;
+  }
+
+  .button {
+    margin: 0 auto;
+  }
+
+  .playground-input {
+    grid-template-columns: auto;
+  }
+}
+
+.button {
+  outline: none;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.input {
+  outline: none;
+  border: none;
+  height: 30px;
+  width: 40px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+}

@@ -1,0 +1,116 @@
+.side-menu {
+  width: 200px;
+  height: 100%;
+}
+
+@media only screen and (min-height: 680px) {
+  .side-menu {
+    position: sticky;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .side-menu {
+    display: none;
+  }
+}
+
+.menu-link {
+  color: #444d54;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 100px;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.menu-link:hover {
+  color: #89939c;
+}
+
+.content {
+  padding: 60px;
+  width: 700px;
+}
+
+@media only screen and (max-width: 800px) {
+  .content {
+    padding: 30px;
+    padding-top: 60px;
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .content {
+    padding: 20px;
+    padding-top: 40px;
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .content {
+    padding: 10px;
+    padding-top: 30px;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .content {
+    width: 260px;
+  }
+}
+
+@media only screen and (max-width: 285px) {
+  .content {
+    width: 200px;
+  }
+}
+
+.props-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.props-data {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+th {
+  width: 200px;
+}
+
+.hash-link {
+  color: black;
+  text-decoration: none;
+}
+
+.hash-link::before {
+  display: block;
+  height: 60px;
+  margin-top: -60px;
+  content: "";
+}
+
+:target::before {
+  content: "";
+  display: block;
+  height: 50px;
+  margin-top: -50px;
+  pointer-events: none;
+  cursor: default;
+}
+
+:target::before:focus {
+  outline: none;
+}
+
+:target::after:focus {
+  outline: none;
+}

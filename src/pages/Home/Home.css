@@ -1,0 +1,156 @@
+.Home {
+  text-align: center;
+  color: #2e353b;
+}
+
+.introduction {
+  padding: 0 80px;
+  padding-bottom: 80px;
+}
+
+.welcome-text {
+  font-size: 30px;
+  margin: 0 10px;
+  white-space: nowrap;
+}
+
+.title {
+  font-size: 76px;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-top: -40px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.button {
+  cursor: pointer;
+  margin: 0 20px;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+
+.sponsor-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(117, 126, 143);
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 900px) {
+  .introduction {
+    padding: 0 20px;
+    padding-bottom: 80px;
+  }
+
+  .title {
+    font-size: 56px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    margin-top: -30px;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .title {
+    font-size: 42px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-top: -20px;
+  }
+
+  .sponsor-text {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .introduction {
+    padding: 0 10px;
+    padding-bottom: 80px;
+  }
+
+  .title {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-top: -10px;
+  }
+
+  .website-image {
+    height: 28px;
+  }
+
+  .button {
+    margin: 0 10px;
+  }
+}
+
+.examples {
+  background-color: #e2eaee;
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-bottom: -60px;
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+.header {
+  font-size: 40px;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  background-color: white;
+  margin: 0 30px;
+  padding: 20px;
+}
+
+.conclusion {
+  background-color: #262f3a;
+  color: rgb(240, 243, 247);
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-bottom: -60px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.conclusion-text {
+  font-size: 18px;
+}
+
+.conclusion-link {
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 680px) {
+  .conclusion {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

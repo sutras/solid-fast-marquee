@@ -1,0 +1,55 @@
+{
+  "name": "solid-fast-marquee",
+  "version": "0.1.0",
+  "description": "A lightweight Solid component that utilizes the power of CSS animations to create silky smooth marquees. (Adapted from react-fast-marquee)",
+  "type": "module",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "build:lib": "node ./commands/build.js",
+    "release": "node ./commands/release.js",
+    "deploy": "node ./commands/deploy.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-typescript": "^7.24.7",
+    "@solidjs/router": "^0.14.7",
+    "@types/node": "^22.7.3",
+    "babel-preset-solid": "^1.9.0",
+    "consola": "^3.2.3",
+    "gh-pages": "^6.1.1",
+    "glob": "^11.0.0",
+    "highlight.js": "^11.10.0",
+    "solid-devtools": "^0.29.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11",
+    "vite-plugin-solid": "^2.8.2"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sutras/solid-fast-marquee.git"
+  },
+  "keywords": [
+    "solid",
+    "marquee",
+    "solid-component",
+    "solid-js",
+    "carousel",
+    "slider",
+    "ticker",
+    "horizontal-scrolling-carousels"
+  ],
+  "author": "wuzhitao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sutras/solid-fast-marquee/issues"
+  },
+  "homepage": "https://github.com/sutras/solid-fast-marquee#readme"
+}
