@@ -3,7 +3,7 @@ import SyntaxHighlighter from "@/components/SyntaxHighlighter";
 const marqueeProps = {
   style: {
     description: "The inline style for the container div.",
-    type: "CSSProperties",
+    type: "JSX.CSSProperties",
     defaultValue: "{}",
     required: false,
   },

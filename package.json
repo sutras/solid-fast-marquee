@@ -8,11 +8,13 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "vite build",
     "serve": "vite preview",
+    "build": "vite build",
+    "deploy": "node ./commands/deploy.js",
+    "buildAndDeploy": "npm run build && npm run deploy",
     "build:lib": "node ./commands/build.js",
     "release": "node ./commands/release.js",
-    "deploy": "node ./commands/deploy.js"
+    "buildLibAndRelease": "npm run build:lib && npm run release"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

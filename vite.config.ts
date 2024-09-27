@@ -18,6 +18,7 @@ export default defineConfig({
   build: {
     target: "esnext",
   },
+  base: "/solid-fast-marquee-docs/",
   resolve: {
     alias: [
       {
